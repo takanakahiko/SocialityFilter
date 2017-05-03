@@ -22,7 +22,7 @@ function replace(text) {
   var id = "13K6fMaL_x1-MueE9z6Cybq4tMk3NS5qdtzwEAJ81T9Q";
   var name = "シート1";
   var data = getArrayFromSpreadsheet(id,name);
-  for(var ar in data){
+  for(var ar in data){ //この繰り返し、あまり良くないと思った
     if(ar == 0) continue;
     text = text.replace(data[ar][1],"にゃーん");
   }
