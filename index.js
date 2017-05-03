@@ -14,7 +14,7 @@ function requestJsonP(text) {
 }
 
 function cb(json){
-    var url = "https://twitter.com/share?text="+ json.response +"&hashtags=社会性ツイートボタン&url=http://jsrun.it/Nakahiko/Ms9H"; // 通常の遷移
+    var url = "https://twitter.com/share?text="+ json.response +"&hashtags=社会性ツイートボタン&url=http://takanakahiko.me/SocialityFilter"; // 通常の遷移
     try{
         //window.open(url, '_blank');
         window.location = url;
