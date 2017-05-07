@@ -5,7 +5,7 @@ document.getElementById('button').addEventListener('click',function(){
 });
 
 function requestJsonP(text) {
-    var requestUrl = "https:/socialityfilter.takanakahiko.me/?text=" + text + "&callback=cb";
+    var requestUrl = "https://socialityfilter.takanakahiko.me/?text=" + text + "&callback=cb";
     var s = document.createElement('script');
     s.charset = 'utf-8';
     s.type = "text/javascript";
