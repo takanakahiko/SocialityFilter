@@ -8,7 +8,7 @@ function createContent(callback , returnObject ) { //JSONまたはJSONPの文字
   if(callback) {
     return ContentService.createTextOutput(callback + '(' + JSON.stringify(returnObject) + ')').setMimeType(ContentService.MimeType.JAVASCRIPT);
   } else {
-    return ContentService.createTextOutput(JSON.stringify( JSON.stringify(returnObject))).setMimeType(ContentService.MimeType.JSON);
+    return ContentService.createTextOutput(JSON.stringify(returnObject)).setMimeType(ContentService.MimeType.JSON);
   }  
 }
 
