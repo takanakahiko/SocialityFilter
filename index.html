@@ -43,8 +43,13 @@
         </tr>
         <tr>
             <td>text</td>
-            <td>〇</td>
+            <td>△</td>
             <td>反社会性のある文を指定します</td>
+        </tr>
+        <tr>
+            <td>list</td>
+            <td>△</td>
+            <td>trueを指定すると反社会性ワードのリストを取得できます(ベータ機能)</td>
         </tr>
         <tr>
             <td>callback</td>
@@ -52,13 +57,19 @@
             <td>jsonpで呼び出したい場合のみ、コールバック関数の名前を指定します</td>
         </tr>
     </table>
-    <p>例1:<a href="https://SocialityFilter.takanakahiko.me?text=お前の家を爆発する" target="_blank">
-        https://SocialityFilter.takanakahiko.me?text=お前の家を爆発する
+    <p>例1:
+        <a href="https://SocialityFilter.takanakahiko.me?text=お前の家を爆発する" target="_blank">
+            https://SocialityFilter.takanakahiko.me?text=お前の家を爆発する
         </a>
     </p>
     <p>例2:
         <a href="https://SocialityFilter.takanakahiko.me?text=なぜこうも馬鹿が多いのだ&callback=hoge" target="_blank">
-        https://SocialityFilter.takanakahiko.me?text=なぜこうも馬鹿が多いのだ&callback=hoge
+            https://SocialityFilter.takanakahiko.me?text=なぜこうも馬鹿が多いのだ&callback=hoge
+        </a>
+    </p>
+    <p>例3:
+        <a href="https://SocialityFilter.takanakahiko.me?list=true" target="_blank">
+            https://SocialityFilter.takanakahiko.me?list=true
         </a>
     </p>
 </section>
